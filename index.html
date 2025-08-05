@@ -1,54 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday, Gurmehar! 🎉</title>
-    <style>
-        body {
-            background: linear-gradient(to right, #fdfbfb, #ebedee);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 2rem;
-            color: #333;
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.7;
-        }
-        h1 {
-            color: #d63384;
-            text-align: center;
-        }
-        .heart {
-            text-align: center;
-            font-size: 2rem;
-        }
-        .message {
-            white-space: pre-wrap;
-            margin-top: 2rem;
-        }
-        <div style="text-align: center; margin-top: 20px;">
-    <img src="gurmehar.jpg" alt="Gurmehar" style="max-width: 300px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
-</div>
-
-    </style>
+  <title>Happy Birthday Gurmehar!</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Happy Birthday" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="loading.css" />
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' />
 </head>
 <body>
-    <h1>Happy Birthday, Gurmehar! 🎉</h1>
-    <div class="heart">💖🌸✨</div>
-    <div class="message">Happy Birthday my Mehar 💖
+  <div class="loading"></div>
+  
+  <audio class="song" controls loop autoplay>
+    <source src="hbd.mp3" type="audio/mpeg">
+    Your browser isn’t invited for super fun audio time.
+  </audio>
 
-Your first birthday after getting married and you’re glowing in a way that feels so full and real. Watching you step into this new chapter has been such a beautiful feeling. You’ve always carried strength, grace, and love in you, but now it feels like it’s radiating even more.
+  <!-- Balloons -->
+  <div class="balloons text-center" id="b1"><h2 style="color:#F2B300;">H</h2></div>
+  <div class="balloons text-center" id="b2"><h2 style="color:#0719D4;">B</h2></div>
+  <div class="balloons text-center" id="b3"><h2 style="color:#D14D39;">D</h2></div>
+  <div class="balloons text-center" id="b4"><h2 style="color:#8FAD00;">Y</h2></div>
 
-You’ve been my person through so much. My calm when things were messy. My laughter on days that felt too heavy. My reality check and biggest cheerleader. There are very few people in this world who just understand without needing words, and you’re that for me.
+  <img src="Balloon-Border.png" width="100%" class="balloon-border" />
 
-I don’t say it enough, but I’m so grateful for you. For your energy, your loyalty, your softness, your madness. I’ve always admired how deeply you love and how fiercely you protect the people you care about. It’s something rare and precious.
+  <!-- Image of Gurmehar -->
+  <div class="row text-center" style="margin-top:30px;">
+    <div class="col-md-12">
+      <img src="gurmehar.jpg" alt="Gurmehar" style="max-width:300px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2);" class="img-responsive center-block" />
+    </div>
+  </div>
 
-This year, I wish you softness in your days, adventure in your heart, and a sense of peace that never leaves. I hope you continue blooming in love, in laughter, in everything that sets your soul on fire. And no matter where life takes us, I’ll always be here—cheering for you, holding space, and loving you just the same.
+  <div class="container">
+    
+    <div class="row cake-cover">
+      <div class="col-md-12 text-center">
+        <div class="cake">
+          <div class="velas"><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div></div>
+          <div class="cobertura"></div>
+          <div class="bizcocho"></div>
+        </div>
+      </div>
+    </div>
 
-You’re one of my most precious people and I’ll never stop being thankful for you.
+    <div class="row message">
+      <div class="col-md-12">
+        <p>Today is... as beautiful as other days, but you realize another year has gone in a blink of the eyes. So special to you.…</p>
+        <!-- Personalized message below -->
+        <h3>Your message below:</h3>
+        <p><strong>Happy Birthday my Mehar 💖</strong></p>
+        <p>Your first birthday after getting married and you’re glowing in a way that feels so full and real…</p>
+        <p>…This year, I wish you softness in your days, adventure in your heart, and a sense of peace that never leaves…</p>
+        <p>I love you<br>Shrishti</p>
+      </div>
+    </div>
 
-With all my love,  
-Shrishti</div>
+    <div class="navbar navbar-fixed-bottom">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+          <button class="btn btn-primary" id="play">Play Music</button>
+          <button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
+          <button class="btn btn-primary" id="cake_fadein">Delicious Cake Ever</button>
+          <button class="btn btn-primary" id="light_candle">Light Candle</button>
+          <button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+          <button class="btn btn-primary" id="story">A Message for You</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="effect.js"></script>
 </body>
 </html>
+
